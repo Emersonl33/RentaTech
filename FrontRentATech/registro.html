@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro - RentATech</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/press-start-2p');
+        
+        .navbar {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item {
+            margin-left: 20px;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px;
+        }
+
+        .nav-link:hover {
+            background-color: #0056b3;
+            border-radius: 5px;
+        }
+
+        html, body {
+            font-family: 'Press Start 2P', sans-serif;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.png');
+            background-size: cover;
+            background-position: center;
+            overflow-x: hidden;
+        }
+
+        header, .subheader {
+            color: yellow;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .subheader {
+            color: whitesmoke;
+        }
+
+        footer {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .register-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            padding: 0 20px;
+        }
+
+        .register-card {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .register-card h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .register-card input[type="text"],
+        .register-card input[type="email"],
+        .register-card input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .register-card button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .register-card button:hover {
+            background-color: #0056b3;
+        }
+
+        .register-card .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .nav-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-menu {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .nav-item {
+                margin-left: 0;
+                width: 100%;
+            }
+
+            .nav-link {
+                width: 100%;
+                text-align: left;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">RentATech</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                   <a href="carrinho.html" class="nav-link">Carrinho</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Rent a Tech</h1>
+    </header>
+
+    <div class="subheader">
+        <h2>JOIN US!</h2>
+    </div>
+
+    <div class="register-container">
+        <div class="register-card">
+            <h2>Registro</h2>
+            <form action="/register" method="post">
+                <input type="text" name="nome" placeholder="Nome" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <input type="text" name="endereco" placeholder="Endereço" required />
+                <input type="text" name="cpf" placeholder="CPF" required />
+                <input type="password" name="senha" placeholder="Senha" required />
+                <input type="password" name="confirmar_senha" placeholder="Confirmar Senha" required />
+                <button type="submit">Registrar</button>
+                <!-- Mensagem de erro opcional -->
+                <div class="error-message"></div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Rent a Tech. Todos os direitos reservados.</p>
+    </footer>
+</body>

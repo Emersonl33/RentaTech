@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>RentATech</title>
+    <link rel="stylesheet"  
+    href="style.css"
+    title="principalstyle">
+    <style>
+    @import url('https://fonts.cdnfonts.com/css/press-start-2p'); 
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">RentATech</a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="carrinho.html" class="nav-link">Carrinho</a>
+            </li>
+            <li class="nav-item">
+                <a href="aboutus.html" class="nav-link">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+                <a href="login.html" class="nav-link">Login</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <header>
+        <h1>Rent a Tech</h1>
+    </header>
+
+    <div class="subheader">
+        <h2>KEEP GAMING!</h2>
+    </div>
+
+    <div class="card-container">
+
+        <div class="card">
+        <div class="image-container">
+                <img src="img/rtx4090.png" alt="RTX 4090">
+            </div>
+             <h3>RTX 4090 24GB WC</h3>
+            <p>Selecione seu plano:</p>
+        <select id="plan-selection">
+            <option value="3months">3 Meses  -   R$2800</option>
+            <option value="6months">6 Meses  -  R$4000</option>
+            <option value="1year">1 Ano      -   R$6000</option>
+        </select>
+        <button onclick="buyProduct()">Contratar</button>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <img src= img/4080super.png alt="RTX 4080super">
+            </div>
+            <h3>RTX 4080 SUPER 16GB</h3>
+            <p>Selecione seu plano:</p>
+        <select id="plan-selection">
+            <option value="3months">3 Meses  -   R$2300</option>
+            <option value="6months">6 Meses  -  R$3200</option>
+            <option value="1year">1 Ano      -   R$4600</option>
+        </select>
+        <button onclick="buyProduct()">Contratar</button>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <img src= img/4070ti.png alt="RTX 4070tisuper">
+            </div>
+            <h3>RTX 4070ti SUPER AI 16GB</h3>
+            <p>Selecione seu plano:</p>
+        <select id="plan-selection">
+            <option value="3months">3 Meses  -   R$1800</option>
+            <option value="6months">6 Meses  -  R$3000</option>
+            <option value="1year">1 Ano      -   R$4300</option>
+        </select>
+        <button onclick="buyProduct()">Contratar</button>
+        </div>
+            
+     <div class="card">
+            <div class="image-container">
+                <img src= img/4070.png alt="RTX 4070">
+            </div>
+            <h3>RTX 4070 12GB</h3>
+            <p>Selecione seu plano:</p>
+        <select id="plan-selection">
+            <option value="3months">3 Meses  -   R$1500</option>
+            <option value="6months">6 Meses  -  R$2500</option>
+            <option value="1year">1 Ano      -   R$3500</option>
+        </select>
+        <button onclick="buyProduct()">Contratar</button>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <img src= img/4060.png alt="RTX 4060">
+            </div>
+            <h3>RTX 4060 8GB</h3>
+            <p>Selecione seu plano:</p>
+        <select id="plan-selection">
+            <option value="3months">3 Meses  -   R$1200</option>
+            <option value="6months">6 Meses  -  R$2200</option>
+            <option value="1year">1 Ano      -   R$3000</option>
+        </select>
+        <button onclick="buyProduct()">Contratar</button>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <img src= img/3060ti.png alt="RTX 3060ti">
+            </div>
+            <h3>RTX 3060TI 8GB</h3>
+            <p>Selecione seu plano:</p>
+        <select id="plan-selection">
+            <option value="3months">3 Meses  -   R$1000</option>
+            <option value="6months">6 Meses  -  R$1800</option>
+            <option value="1year">1 Ano      -   R$2900</option>
+        </select>
+        <button onclick="buyProduct()">Contratar</button>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <img src= img/3060.png alt="RTX 3060">
+            </div>
+            <h3>RTX 3060 12GB</h3>
+            <p>Selecione seu plano:</p>
+        <select id="plan-selection">
+            <option value="3months">3 Meses  -   R$500</option>
+            <option value="6months">6 Meses  -  R$1100</option>
+            <option value="1year">1 Ano      -   R$1500</option>
+        </select>
+        <button onclick="buyProduct()">Contratar</button>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <img src= img/3050.png alt="RTX 3050">
+            </div>
+            <h3>RTX 3050 6GB</h3>
+            <p>Selecione seu plano:</p>
+        <select id="plan-selection">
+            <option value="3months">3 Meses  -   R$300</option>
+            <option value="6months">6 Meses  -  R$500</option>
+            <option value="1year">1 Ano      -   R$900</option>
+        </select>
+        <button onclick="buyProduct()">Contratar</button>
+        </div>
+
+    </div>
+    <footer>
+        <p>© 2024 Rent a Tech. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

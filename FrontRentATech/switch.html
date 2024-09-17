@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>RentATech</title>
+    <link rel="stylesheet" href="style.css" title="principalstyle">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/press-start-2p');
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">RentATech</a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="carrinho.html" class="nav-link">Carrinho</a>
+            </li>
+            <li class="nav-item">
+                <a href="aboutus.html" class="nav-link">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+                <a href="login.html" class="nav-link">Login</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <header>
+        <h1>Rent a Tech</h1>
+    </header>
+
+    <div class="subheader">
+        <h2>KEEP CLASSIC!</h2>
+    </div>
+
+    <div class="card-container">
+
+        <div class="card">
+        <div class="image-container">
+                <img src="img/switch.jpg" alt="Nintendo Switch">
+            </div>
+             <h3>Nintendo Switch</h3>
+            <p>Selecione seu plano:</p>
+        <select id="plan-selection">
+            <option value="3months">3 Meses  -   R$350</option>
+            <option value="6months">6 Meses  -   R$600</option>
+            <option value="1year">1 Ano      -   R$1000</option>
+        </select>
+        <button onclick="buyProduct()">Contratar</button>
+        </div>
+
+    </div>
+    <footer>
+        <p>© 2024 Rent a Tech. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

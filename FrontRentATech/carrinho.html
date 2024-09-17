@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrinho - RentATech</title>
+    <link rel= "stylesheet" href = "style.css" title = "principalstyle">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/press-start-2p');
+       </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">RentATech</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="carrinho.html" class="nav-link">Carrinho</a>
+                </li>
+                <li class="nav-item">
+                    <a href="aboutus.html" class="nav-link">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Rent a Tech</h1>
+    </header>
+
+    <div class="subheader">
+        <h2>Carrinho</h2>
+    </div>
+
+    <div class="cart-container">
+        <div class="cart-card">
+            <div class="cart-item">
+                <img src="produto1.jpg" alt="Produto 1">
+                <div class="cart-item-details">
+                    <p class="cart-item-title">Produto 1</p>
+                    <p class="cart-item-price">R$ 100,00</p>
+                </div>
+                <div class="cart-item-quantity">
+                    <label for="quantity1">Qtd:</label>
+                    <input type="number" id="quantity1" name="quantity1" value="1" min="1">
+                </div>
+                <button class="cart-item-remove">Remover</button>
+            </div>
+            <div class="cart-item">
+                <img src="produto2.jpg" alt="Produto 2">
+                <div class="cart-item-details">
+                    <p class="cart-item-title">Produto 2</p>
+                    <p class="cart-item-price">R$ 200,00</p>
+                </div>
+                <div class="cart-item-quantity">
+                    <label for="quantity2">Qtd:</label>
+                    <input type="number" id="quantity2" name="quantity2" value="1" min="1">
+                </div>
+                <button class="cart-item-remove">Remover</button>
+            </div>
+            <div class="cart-summary">
+                <p>Total: R$ 300,00</p>
+                <button class="checkout-button">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Rent a Tech. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
