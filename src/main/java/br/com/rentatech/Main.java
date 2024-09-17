@@ -1,4 +1,4 @@
-package org.example;
+package br.com.rentatech;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
